@@ -1,0 +1,67 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+#wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+#sidebar-wrapper {
+  width: 200px;
+  min-height: 100vh;
+  background-color: #4ca380 !important; /* เปลี่ยนเป็นสีน้ำเงินเข้ม */
+  color: white !important;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+
+#sidebar-wrapper .list-group-item {
+  background-color: transparent !important;
+  color: white !important;
+}
+
+#sidebar-wrapper .list-group-item:hover {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+
+/* ปรับ Sidebar เมื่อปิด */
+#sidebar-wrapper.closed {
+  width: 0;
+}
+
+/* Navbar */
+#page-content-wrapper {
+  flex-grow: 1;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 20px;
+  background-color: #4ca380;
+}
+
+.toggle-btn {
+  font-size: 30px;
+  color: #e5e8f1;
+}
+
+.sidebar-heading {
+  font-size: 24px;
+}
+
+.logo-img {
+  width: 150px;
+}
