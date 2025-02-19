@@ -1,4 +1,4 @@
-module github.com/top002200/stockreversepea
+module github.com/bthananya/finalproject
 
 go 1.23.0
 
